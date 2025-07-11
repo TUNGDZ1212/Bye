@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Xin lỗi và chia tay</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      margin-top: 10vh;
+      padding: 20px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #f06292;
+      display: inline-block;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      color: #e91e63;
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 20px;
+      color: #444;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .heart {
+      font-size: 40px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .footer {
+      margin-top: 30px;
+      color: #999;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="nhac.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <h1>Xin lỗi chị…</h1>
+    <p>Em biết thời gian qua em đã khiến chị buồn và thất vọng.</p>
+    <p>Em đã cố gắng thay đổi, cố gắng giữ lấy... nhưng có lẽ không đủ...</p>
+    <p>Chúng ta đã từng vui vẻ, từng hạnh phúc, nhưng giờ... mọi thứ không còn như trước nữa.</p>
+    <p class="heart">💔</p>
+    <p>Em xin lỗi, vì đã không thể trở thành người mà chị cần.</p>
+    <p>Chúng ta hãy dừng lại tại đây, giữ lại những kỷ niệm đẹp nhất...</p>
+    <div class="footer">Tạm biệt chị – Em vẫn luôn trân trọng tình cảm này 💔</div>
+  </div>
+</body>
+</html>
